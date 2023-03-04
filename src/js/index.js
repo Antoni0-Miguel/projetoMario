@@ -8,12 +8,10 @@ function alternarModal() {
   modal.classList.toggle("aberto");
 }
 
-botaoTrailer.addEventListener("click", () => {
-  alternarModal();
+botaoTrailer.addEventListener("click", alternarModal){
   video.setAttribute("src", linkVideo);
 });
 
-botaoFecharModal.addEventListener("click", () => {
-  alternarModal();
+botaoFecharModal.addEventListener("click", alternarModal){
   video.setAttribute("src", "");
 });
